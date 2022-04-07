@@ -1,38 +1,231 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  font-family:sans-serif;
+  box-sizing: border-box;
+}
+input{
+  outline:none;
+}
+header{
+  background: #0077FF;
+}
+.header-wrap{
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-input{
+  padding: 8px;
+  border:none;
+  border-radius: 10px;
+  background: #00006f;
+  color:#fff;
+}
+.header-input::-webkit-input-placeholder { color:#607d9f; font-weight: 600; }
+header img {
+  padding-left: 10px;
+  width: 45px;
+}
+body{
+  background-color:#EDEEF0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.layout{
+  width: 1200px;
+  margin: auto;
+}
+main{
+  display: flex;
+  margin-top: 20px;
+}
+.users{
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.user{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 0;
+  color: #666;
+  border-radius: 10px;
+  width: 200px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user:hover{
+  background: #f5f5f5;
+}
+.users img{
+  width: 40px;
+}
+.user-name{
+  padding-left: 10px;
+  font-size: 14px;
+}
+.sidebar-menu__item{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #666;
+  border-radius: 10px;
+  width: 150px;
+  padding: 10px;
+}
+.sidebar-menu__item:hover{
+  background: #f5f5f5;
+}
+.sidebar-menu{
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.sidebar-menu__icon{
+  min-width: 40px!important;
+}
+.addPost{
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  padding-left: 20px;
+  background-color: #fff;
+}
+.addPost-input{
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+}
+.user-photo{
+  width: 40px;
+  height: 40px;
+}
+.user-info{
+  display: flex;
+  align-items: center;
+}
+.ago{
+  font-size: 14px;  
+  color:#606060;
+  padding-top: 0;
+  margin-top: 0;
+}
+.post-content{
+  margin-top: 20px;
+}
+.post-item{
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #E8E8E8;
+}
+.post-list{
+  margin-top: 40px;
+}
+.post-text{
+  margin: 20px 0;
+}
+.post-content img {
+  border-radius: 10px;
+}
+.home{
+  padding-left: 20px;
+}
+.auth-form{
   display: flex;
   flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+}
+.auth-form div{
+  margin-bottom: 20px;
+}
+.authBtns{
+  margin: auto;
+}
+.logOutBtn{
+  background: #0077FF;
+  border-radius: 5px;
+  padding: 10px;
+  color:#fff;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+}
+.you{
+  padding-left: 20px;
+}
+.profile{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 100px;
+  padding-left: 20px;
+  height: 200px;
+  width: 100%;
+  border:1px solid lightgrey;
+}
+.profile-photo{
+  width: 100px;
+  height: 100px;
+}
+.profile-name{
+  margin-left: 30px;
+}
+.dialog{
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 100%;
+  border: 1px solid lightgray;
+  display: flex;
+  height: 800px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dialog-body{
+  padding: 50px 50px 0 50px;
+
+}
+.dialog-input{
+  padding: 20px;
+  width: 100%;
+  background: #FAFBFC;
+  border:1px solid lightgrey
+}
+.dialog-input_area{
+  width: 100%;
+  padding: 10px;
+  border:1px solid lightgrey;
+  border-radius: 10px;
+}
+.message{
+  width: 50%;
+  color:#fff;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #0077FF;
+  margin-bottom: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.message-sender{
+  display: flex;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message-content{
+  margin-top: 10px;
 }

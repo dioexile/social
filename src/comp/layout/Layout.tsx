@@ -1,20 +1,22 @@
 import React from 'react'
+import { useAuth } from '../providers/useAuth'
 import Header from './header/Header'
 import Sidebar from './sidebar/Sidebar'
-import Grid from "@mui/material/Grid"
 
 const Layout:React.FC = ({children}) => {
+  const {user} = useAuth()
   return (
     <>
       <Header/>
-      <Grid container spacing={2}>
-        <Grid item md={3}>
-          <Sidebar/>
-        </Grid>
-        <Grid item md={9}>
+      <div className='layout'>
+        <main className='main'>
+          {user &&
+            <Sidebar/>
+          }
           {children}
-        </Grid>
-      </Grid>
+        </main>
+      </div>
+      
     </>
   )
 }

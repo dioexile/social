@@ -1,8 +1,15 @@
 import React from 'react'
+import { IUser } from '../../../types'
+import Menu from './Menu'
+import User from './User'
+import UserItems from './UserItems'
 
-const Sidebar:React.FC = () => {
+const Sidebar:React.FC<IUser> = () => {
   return (
-    <div></div>
+    <div className='sidebar'>
+      <User/>
+      <Menu/>
+    </div>
   )
 }
 
